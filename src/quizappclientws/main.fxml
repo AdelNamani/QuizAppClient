@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="453.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quizappclientws.MainController">
+   <children>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="102.0" prefWidth="654.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="QUIZ APP" textAlignment="CENTER" wrappingWidth="631.22900390625">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="233.0" prefWidth="654.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenu à l'application des Quizes, Veuiller charger vos questions sous forme d'un fichier CSV avant de commencer" textAlignment="CENTER" wrappingWidth="631.22900390625">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="112.0" prefHeight="76.0" prefWidth="654.0">
+         <children>
+            <Text fx:id="result" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="631.22900390625">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="loader" mnemonicParsing="false" onAction="#load" prefHeight="46.0" prefWidth="199.0" text="Charger les questions">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#next" prefHeight="46.0" prefWidth="199.0" text="Commencer">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
